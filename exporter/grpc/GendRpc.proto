@@ -1,0 +1,18 @@
+syntax = "proto3";
+package gendgrpc;
+
+service GendRpc {
+    rpc genId (Request) returns (Reply) {}
+    rpc expId (RequestLong) returns (ReplyString) {}
+}
+
+message Request {}
+message Reply {
+    int64 id = 1;
+}
+message RequestLong {
+    int64 id = 1;
+}
+message ReplyString {
+    string json = 1;
+}
