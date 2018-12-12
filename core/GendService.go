@@ -1,6 +1,6 @@
 package core
 
-import "gend/core/entity"
+import "github.com/jsen-joker/gend/core/entity"
 
 // 服务接口
 type GendService interface {

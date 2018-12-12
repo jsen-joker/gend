@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"gend/core/config"
-	"gend/core/entity"
+	"github.com/jsen-joker/gend/core/config"
+	"github.com/jsen-joker/gend/core/entity"
 )
 
 // id 和 long 之间的编解码

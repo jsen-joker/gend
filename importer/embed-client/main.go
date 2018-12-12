@@ -22,10 +22,8 @@ import "C"
 import (
 	"github.com/jsen-joker/gend/core"
 	"github.com/jsen-joker/gend/core/config"
-	"github.com/jsen-joker/gend/importer/grpc-client/service"
 )
 
-var c *service.ClientService
 var gendFacade core.GendFacade
 
 //export EmbedInitGend
@@ -47,23 +45,6 @@ func EmbedExpId(id int64) *C.char  {
 }
 
 
-//export GrpcInitGend
-func GrpcInitGend(data string)  {
-	println(data)
-	config.InitConfig(data)
-	config.GetDefaultConfigInstance().Gen = 1
-	c = service.GetClientService(config.GetDefaultConfigInstance().RpcAddress)
-}
-
-//export GrpcGenId
-func GrpcGenId() int64  {
-	return c.GenId()
-}
-
-//export GrpcExpId
-func GrpcExpId(id int64) *C.char  {
-	return C.CString(c.ExpId(id))
-}
 func main() {
 	//for true {
 	//	GrpcInitGend("")

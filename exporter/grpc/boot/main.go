@@ -22,9 +22,9 @@ package main
 
 import (
 	"context"
-	"gend/core"
-	"gend/core/config"
-	pb "gend/exporter/grpc"
+	"github.com/jsen-joker/gend/core"
+	"github.com/jsen-joker/gend/core/config"
+	pb "github.com/jsen-joker/gend/exporter/grpc"
 	"log"
 	"net"
 

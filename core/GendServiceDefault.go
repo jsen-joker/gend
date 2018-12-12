@@ -1,10 +1,10 @@
 package core
 
 import (
-	"gend/core/config"
-	"gend/core/entity"
-	"gend/core/populate"
-	"gend/core/utils"
+	"github.com/jsen-joker/gend/core/config"
+	"github.com/jsen-joker/gend/core/entity"
+	"github.com/jsen-joker/gend/core/populate"
+	"github.com/jsen-joker/gend/core/utils"
 )
 
 type DefaultGendService struct {

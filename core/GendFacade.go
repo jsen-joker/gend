@@ -1,7 +1,7 @@
 package core
 
 import (
-	"gend/core/entity"
+	"github.com/jsen-joker/gend/core/entity"
 )
 
 type GendFacade struct {

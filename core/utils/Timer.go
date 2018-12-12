@@ -3,7 +3,7 @@ package utils
 import (
 	"errors"
 	"fmt"
-	"gend/core/config"
+	"github.com/jsen-joker/gend/core/config"
 	"time"
 )
 

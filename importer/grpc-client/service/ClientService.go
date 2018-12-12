@@ -1,8 +1,8 @@
-package boot
+package service
 
 import (
 	"context"
-	pb "gend/exporter/grpc"
+	pb "github.com/jsen-joker/gend/exporter/grpc"
 	"google.golang.org/grpc"
 	"log"
 	"time"

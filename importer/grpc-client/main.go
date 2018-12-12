@@ -20,31 +20,11 @@ package main
 
 import "C"
 import (
-	"github.com/jsen-joker/gend/core"
 	"github.com/jsen-joker/gend/core/config"
 	"github.com/jsen-joker/gend/importer/grpc-client/service"
 )
 
 var c *service.ClientService
-var gendFacade core.GendFacade
-
-//export EmbedInitGend
-func EmbedInitGend(data string)  {
-	config.InitConfig(data)
-	config.GetDefaultConfigInstance().Gen = 0
-	gendFacade = core.GendFacade{}
-	gendFacade.Init()
-}
-
-//export EmbedGenId
-func EmbedGenId() int64  {
-	return gendFacade.GenId()
-}
-
-//export EmbedExpId
-func EmbedExpId(id int64) *C.char  {
-	return C.CString(gendFacade.ExpId(id).ToJson())
-}
 
 
 //export GrpcInitGend

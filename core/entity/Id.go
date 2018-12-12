@@ -4,12 +4,12 @@ import "fmt"
 
 // ID模型
 type ID struct {
-	Version int64
-	Type int64
-	Gen int64
-	Time int64
-	Serial int64
-	Machine int64
+	Version int64 `json:"version"`
+	Type int64 `json:"type"`
+	Gen int64 `json:"gen"`
+	Time int64 `json:"time"`
+	Serial int64 `json:"serial"`
+	Machine int64 `json:"machine"`
 }
 // id 核心schema
 
