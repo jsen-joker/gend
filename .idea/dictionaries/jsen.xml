@@ -2,6 +2,7 @@
   <dictionary name="jsen">
     <words>
       <w>gend</w>
+      <w>gopath</w>
       <w>grpc</w>
       <w>struct</w>
     </words>
